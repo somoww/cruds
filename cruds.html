@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cruds.css">
+    
+</head>
+<body>
+<div id="cruds">
+
+    <div id="head">
+        <div id="header"> <h1>cruds</h1> <h2>product management system</h2></div>
+
+    </div>
+
+
+    <div id="inputs">
+        <input id="title" placeholder="title" type="text">
+
+        <div class="price">
+            <input onkeyup="gettotal()" id="price" placeholder="price" type="text">
+            <input onkeyup="gettotal()" id="taxes" placeholder="taxes" type="text">
+            <input onkeyup="gettotal()" id="ads" placeholder="ads" type="text">
+            <small id="total"></small>
+        </div>
+
+        <input id="count" placeholder="count" type="text">
+        <input id="cateogery" placeholder="cateogery" type="text">
+        <button id="create">create</button>
+
+        <input id="searchbar" placeholder="search" onkeyup="searchdata(this.value)" type="text">
+
+        <div id="search">
+            <button id="searchtitle" onclick="getsearchmode(this.id)"  >search by title</button>
+            <button id="searchcategory" onclick="getsearchmode(this.id)" >search by cateogery</button>
+        </div>
+
+
+
+        
+
+    </div>
+
+    
+    <div id="outputs">
+        <table id="table">
+            <thead>
+                <tr>
+                    <td>id</td>
+                    <td>title</td>
+                    <td>price</td>
+                    <td>taxes</td>
+                    <td>ads</td>
+                    <td>total</td>
+                    <td>count</td>
+                    <td>cateogery</td>
+                    <td >update</td>
+                    <td>delete</td>
+                    
+                </tr>
+                
+            </thead>
+            <tbody id="tbody">
+               
+            </tbody>
+            
+        </table>
+    </div>
+    <div id="deleteall">
+        
+    </div>
+
+
+
+    
+
+    
+    
+    
+   
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<script src="cruds.js"></script>
+</body>
+</html>
